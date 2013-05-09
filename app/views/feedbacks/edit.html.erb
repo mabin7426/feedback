@@ -6,7 +6,7 @@
 
 	<%= form_tag "/feedbacks/#{@comment.id}", method: 'put' do %>
 		<p>
-			<%= label_tag :fname, "Name" %>
+			<%= label_tag :fname, "First Name" %>
 			<%= text_field_tag :fname, "", size: 80, placeholder: @comment.fname %>
 		</p>
 

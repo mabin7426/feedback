@@ -1,5 +1,7 @@
 class FeedbacksController < ApplicationController
 
+	http_basic_authenticate_with :name => "kellogg", :password => "kellogg"
+
 	def index
 		@comments = Comment.all
 	end

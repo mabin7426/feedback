@@ -1,11 +1,11 @@
 <p><%= link_to "Back", "/feedbacks" %></p>
 
 <div class="center hero-unit">
-	<h1>New Offer</h1>
+	<h1>New Comment</h1>
 
 	<%= form_tag "/feedbacks/" do %>
 		<p>
-			<%= label_tag :fname, "Name" %>
+			<%= label_tag :fname, "First Name" %>
 			<%= text_field_tag :fname, "", size: 80, placeholder: "Write the Brother's first name" %>
 		</p>
 
