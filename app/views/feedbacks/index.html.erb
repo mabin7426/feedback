@@ -1,0 +1,24 @@
+<div class="center hero-unit">
+
+	<h1>Welcome Brothers</h1>
+	<h2>Click on your name to view your feedback</h2>
+
+	<p><%= link_to "Create a New Comment", "/feedbacks/new" %></p>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+		<%= @comments.each do |comments| %>
+			<tr>
+
+				<td><%= link_to comments.fname, "/feedbacks/#{comments.id}"%></td>
+			</tr>
+		<% end %>
+		</tbody>
+	</table>
+
+</div>

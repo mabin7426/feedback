@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fname: MyString
+  good: MyString
+  bad: MyString
+  notes: MyString
+
+two:
+  fname: MyString
+  good: MyString
+  bad: MyString
+  notes: MyString
