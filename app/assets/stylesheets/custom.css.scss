@@ -3,6 +3,7 @@
 h1 {
 	padding-top: 30px;
 	text-align: center;
+	padding-bottom: 30px;
 }
 
 /* universal */
@@ -17,6 +18,10 @@ body {
 
 section {
   overflow: auto;
+}
+
+.span6 {
+  padding-bottom: 50px;
 }
 
 textarea {

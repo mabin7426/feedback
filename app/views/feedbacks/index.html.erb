@@ -1,11 +1,24 @@
 <div class="center hero-unit">
 
 	<h1>Welcome Kellogg Brothers!</h1>
-	<h2>Look at your own feedback below, or create a new comment for a fellow brother</h2>
 
-    <p><%= link_to "Create a New Comment", "/feedbacks/new" %></p>
+    <h2><%= link_to "Click here to create a new comment", "/feedbacks/new" %></h2>
 
-	<table class="center table table-striped">
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<h2 class="center">It's All for You</h2>
+			<p>Look below and read your feedback from fellow brothers in Christ who want to encourage you.  They don't say this to build up your ego, but to build you up in Christ</p>
+	</div>
+
+	<div class="span6">
+		<h2 class="center">Honest Feedback</h2>
+			<p>Here at Kellogg, we know that we are not perfect, and we all see in each other things that we can't see ourselves.  That's why getting feedback from each other is so crucial for us to grow and mature in Christ.</p>
+	</div>
+</div>
+
+	<table class="blah hero-unit center table table-striped">
 		<thead>
 			<tr>
 				<th></th>
@@ -28,4 +41,3 @@
 		<% end %>
 		</tbody>
 	</table>
-</div>
