@@ -12,7 +12,7 @@
 				<th></th>
 				<th>Name</th>
 				<th>Strengths</th>
-				<th>Weaknesses</th>
+<!-- 				<th>Weaknesses</th> -->
 				<th>Notes</th>			
 			</tr>
 		</thead>
@@ -23,9 +23,9 @@
 				<td><%= link_to "Edit", "/feedbacks/#{comments.id}/edit" %></td>
 
 				<td><%= link_to comments.fname, "/feedbacks/#{comments.id}"%></td>
-				<td><%= link_to comments.good, "/feedbacks/#{comments.id}"%></td>
-				<td><%= link_to comments.bad, "/feedbacks/#{comments.id}"%></td>
-				<td><%= link_to comments.notes, "/feedbacks/#{comments.id}"%></td>
+				<td><%= comments.good %></td>
+<!-- 				<td><%= comments.bad %></td> -->
+				<td><%= comments.notes %></td>
 			</tr>
 		<% end %>
 		</tbody>

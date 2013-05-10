@@ -3,7 +3,13 @@ class FeedbacksController < ApplicationController
 	http_basic_authenticate_with :name => "kellogg", :password => "kellogg"
 
 	def index
-		@comments = Comment.all
+		sort_direction = params["sortby"]
+		if sort_direction == nil
+			sort_direction = "asc"
+		end
+		@comments = Comment.order("fname #{sort_direction}").limit(100)
+		    # @movies = Movie.order("title #{sort_direction}").limit(100)
+
 	end
 
 	def new

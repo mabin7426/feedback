@@ -6,7 +6,7 @@
 	<%= form_tag "/feedbacks/" do %>
 		<p>
 			<%= label_tag :fname, "First Name" %>
-			<%= text_field_tag :fname, "", size: 80, placeholder: "Write the Brother's first name" %>
+			<%= text_field_tag :fname, "", placeholder: "Write the Brother's first name" %>
 		</p>
 
 		<p>
@@ -14,11 +14,11 @@
 			<%= text_field_tag :good, "", size: 80, placeholder: "Write a strength" %>
 		</p>
 
-		<p>
+<!-- 		<p>
 			<%= label_tag :bad, "Weaknesses" %>
 			<%= text_field_tag :bad, "", size: 80, placeholder: "Write a weakness" %>
 		</p>
-
+ -->
 		<p>
 			<%= label_tag :notes, "Notes" %>
 			<%= text_field_tag :notes, "", size: 80, placeholder: "Write any notes" %>

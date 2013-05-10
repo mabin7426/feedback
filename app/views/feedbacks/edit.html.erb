@@ -7,7 +7,7 @@
 	<%= form_tag "/feedbacks/#{@comment.id}", method: 'put' do %>
 		<p>
 			<%= label_tag :fname, "First Name" %>
-			<%= text_field_tag :fname, "", size: 80, placeholder: @comment.fname %>
+			<%= select_tag :fname, options_from_collection_for_select(Comment.all, :id, :fname, @comment.id), placeholder: @comment.fname %>
 		</p>
 
 		<p>
@@ -15,10 +15,10 @@
 			<%= text_field_tag :good, "", size: 80, placeholder: @comment.good %>
 		</p>
 
-		<p>
+<!-- 		<p>
 			<%= label_tag :bad, "Weaknesses" %>
 			<%= text_field_tag :bad, "", size: 80, placeholder: @comment.bad %>
-		</p>
+		</p> -->
 
 		<p>
 			<%= label_tag :notes, "Notes" %>
