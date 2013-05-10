@@ -3,7 +3,7 @@
 	<h1>Welcome Brothers</h1>
 	<h2>Click on your name to view your feedback</h2>
 
-	<p><%= link_to "Create a New Comment", "/feedbacks/new" %></p>
+    <p><%= link_to "Create a New Comment", "/feedbacks/new" %></p>
 
 	<table class="center table table-striped">
 		<thead>
@@ -12,7 +12,6 @@
 				<th></th>
 				<th>Name</th>
 				<th>Strengths</th>
-<!-- 				<th>Weaknesses</th> -->
 				<th>Notes</th>			
 			</tr>
 		</thead>
@@ -24,11 +23,9 @@
 
 				<td><%= link_to comments.fname, "/feedbacks/#{comments.id}"%></td>
 				<td><%= comments.good %></td>
-<!-- 				<td><%= comments.bad %></td> -->
 				<td><%= comments.notes %></td>
 			</tr>
 		<% end %>
 		</tbody>
 	</table>
-
 </div>
