@@ -1,7 +1,7 @@
 <div class="center hero-unit">
 
-	<h1>Welcome Brothers</h1>
-	<h2>Click on your name to view your feedback</h2>
+	<h1>Welcome Kellogg Brothers!</h1>
+	<h2>Look at your own feedback below, or create a new comment for a fellow brother</h2>
 
     <p><%= link_to "Create a New Comment", "/feedbacks/new" %></p>
 
@@ -21,7 +21,7 @@
 				<td><%= link_to "Delete", "/feedbacks/#{comments.id}", method: 'delete', data: { confirm: "Are you sure you want to delete this comment?" } %></td>
 				<td><%= link_to "Edit", "/feedbacks/#{comments.id}/edit" %></td>
 
-				<td><%= link_to comments.fname, "/feedbacks/#{comments.id}"%></td>
+				<td><%= comments.fname %></td>
 				<td><%= comments.good %></td>
 				<td><%= comments.notes %></td>
 			</tr>
